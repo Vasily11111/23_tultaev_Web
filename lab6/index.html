@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <button onclick="getWeather()">Погода</button>
+            <button onclick="getWiki()">Википедия</button>
+            <button onclick="getInsult()">Генератор оскорблений</button>
+            <button onclick="testCrud()">CRUD Методы</button>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="content">
+            <div class="welcome-message">
+                <h1>Добро пожаловать!</h1>
+                <p>Выберите один из пунктов меню в шапке.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

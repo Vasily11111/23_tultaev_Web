@@ -1,0 +1,146 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #333;
+            padding: 15px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav button {
+            padding: 10px 20px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        nav button:hover {
+            background-color: #4cae4c;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            min-height: 200px;
+        }
+
+        .loader {
+            color: #888;
+            font-style: italic;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .placeholder {
+            color: #666;
+            font-style: italic;
+        }
+
+        .crud-toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .crud-toolbar button {
+            padding: 8px 14px;
+            border: none;
+            border-radius: 6px;
+            background: #3498db;
+            color: #fff;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .crud-toolbar button:hover {
+            background: #2f87c1;
+        }
+
+        .crud-status {
+            margin: 12px 0 0;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .crud-status-error {
+            color: #c0392b;
+        }
+
+        .crud-steps {
+            margin: 0;
+            padding-left: 20px;
+            max-height: 220px;
+            overflow: auto;
+        }
+
+        .crud-steps li {
+            margin-bottom: 6px;
+        }
+
+        .crud-details {
+            border: 1px solid #e3e3e3;
+            border-radius: 6px;
+            padding: 8px 10px;
+            margin-bottom: 10px;
+            background: #fafafa;
+        }
+
+        .crud-details summary {
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        pre {
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-break: break-word;
+            margin-top: 8px;
+        }
+
+        @media (max-width: 640px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                padding: 0 12px;
+            }
+
+            nav button {
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .crud-toolbar button {
+                width: 100%;
+                max-width: 260px;
+            }
+        }
